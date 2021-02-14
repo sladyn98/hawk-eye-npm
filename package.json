@@ -1,5 +1,5 @@
 {
-  "name": "hawk-eye",
+  "name": "hawk-fetch",
   "version": "1.0.0",
   "description": "Fetches status of a given pull request in github",
   "main": "index.js",

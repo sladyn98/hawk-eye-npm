@@ -1,11 +1,11 @@
-# Hawk-eye 
+# Hawk-fetch
 
 This npm package fetches the status checks for a particular repository and a given pull request number
 
 # Usage
 
 ```
-npm save -i hawk-eye
+npm save -i hawk-fetch
 ```
 
 # Options
@@ -13,7 +13,7 @@ npm save -i hawk-eye
 You need to provide options:
 
 ```
-const hawk = require('hawk-eye')
+const hawk = require('hawk-fetch')
     hawk.fetchData({
       token :  '',
       owner  : 'jenkinsci',
