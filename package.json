@@ -1,0 +1,24 @@
+{
+  "name": "hawk-eye",
+  "version": "1.0.0",
+  "description": "Fetches status of a given pull request in github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sladyn98/hawk-eye-npm.git"
+  },
+  "keywords": [
+    "pull",
+    "requests",
+    "github"
+  ],
+  "author": "Sladyn Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sladyn98/hawk-eye-npm/issues"
+  },
+  "homepage": "https://github.com/sladyn98/hawk-eye-npm#readme"
+}
