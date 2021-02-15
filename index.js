@@ -14,6 +14,7 @@ async function getStatusData(options, callback) {
           pullRequest(number: ${options.pr}){
               number
               url
+              mergeable
               author {
                 login
                 url
