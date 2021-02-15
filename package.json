@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sladyn98/hawk-eye-npm/issues"
   },
-  "homepage": "https://github.com/sladyn98/hawk-eye-npm#readme"
+  "homepage": "https://github.com/sladyn98/hawk-eye-npm#readme",
+  "dependencies": {
+    "@octokit/graphql": "^4.6.0"
+  }
 }

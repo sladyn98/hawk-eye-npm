@@ -15,9 +15,10 @@ You need to provide options:
 ```
 const hawk = require('hawk-fetch')
     hawk.fetchData({
-      token :  '',
+      token  :  '',
       owner  : 'jenkinsci',
-      repo   : 'custom-distribution-service'
+      repo   : 'custom-distribution-service',
+      pr     : '162'
     }).then(res => console.log(res))
 
 ```

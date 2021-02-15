@@ -11,7 +11,7 @@ async function getStatusData(options, callback) {
       const query = `{
         repository(owner: "${options.owner}", name:"${options.repo}"){
           url
-          pullRequest(number: 162){
+          pullRequest(number: ${options.pr}){
               number
               url
               author {
