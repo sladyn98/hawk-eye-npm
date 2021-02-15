@@ -41,7 +41,7 @@ async function getStatusData(options, callback) {
       
       try {
         const result = await graphql(query);
-        return result
+        return JSON.stringify(result, null, 2)
       } catch (error) {
         console.log("Request failed:", error.request);
         throw new Error(400);
