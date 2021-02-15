@@ -15,6 +15,7 @@ async function getStatusData(options, callback) {
               number
               url
               mergeable
+              reviewDecision
               author {
                 login
                 url
