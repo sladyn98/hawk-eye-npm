@@ -1,4 +1,4 @@
-const { graphql } = require("@octokit/graphql");
+let { graphql } = require("@octokit/graphql");
 
 async function getStatusData(options, callback) {
     graphql = graphql.defaults({
@@ -41,10 +41,10 @@ async function getStatusData(options, callback) {
       
       try {
         const result = await graphql(query);
-        callback(result)
+        return result
       } catch (error) {
         console.log("Request failed:", error.request);
-
+        throw new Error(400);
       }
 }
 
