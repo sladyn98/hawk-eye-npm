@@ -12,6 +12,10 @@ npm save -i hawk-fetch
 
 You need to provide options:
 
+a) hawk.getStatusData : Fetches all data for a given pull request
+
+#### Usage
+
 ```
 const hawk = require('hawk-fetch')
    (async () => {
@@ -22,4 +26,31 @@ const hawk = require('hawk-fetch')
       pr     : '162'
     }));
 })();
+```
+
+b) hawk.isMergeable : Checks if a PR has any merge conflicts and whether it can be merged
+
+#### Usage
+
+```
+hawk.isMergeable({
+      token  : '',
+      owner  : 'jenkinsci',
+      repo   : 'custom-distribution-service',
+      pr     : '162'
+  }).then(res => console.log(res))
+```
+
+
+b) hawk.isPendingReview : Checks if a PR has pending reviews or is approved
+
+#### Usage
+
+```
+hawk.isPendingReview({
+      token  : '',
+      owner  : 'jenkinsci',
+      repo   : 'custom-distribution-service',
+      pr     : '162'
+  }).then(res => console.log(res))
 ```

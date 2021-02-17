@@ -1,6 +1,6 @@
 {
   "name": "hawk-fetch",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Fetches status of a given pull request in github",
   "main": "index.js",
   "scripts": {
